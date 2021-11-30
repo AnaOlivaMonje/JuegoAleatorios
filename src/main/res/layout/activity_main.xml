@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+
+      <ImageButton
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:src="@drawable/shuffle"
+          android:layout_weight="0.5"
+          android:id="@+id/boton_inicial"
+          android:background="@color/white"
+          android:layout_margin="20dp"/>
+
+      <ImageButton
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:src="@drawable/award"
+          android:id="@+id/boton_ganador"
+          android:background="@color/white"
+          android:layout_margin="20dp"
+          />
+
+   </LinearLayout>
+
+
+
+      <ImageButton
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:src="@drawable/dices"
+          android:layout_marginHorizontal="50sp"
+          android:id="@+id/boton_dados"
+          android:background="@color/white"
+          android:layout_margin="40dp"
+          />
+
+
+
+
+</LinearLayout>

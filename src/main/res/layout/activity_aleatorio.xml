@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aleatorioActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Generador de aleatorios"
+    android:textSize="35dp"
+    android:id="@+id/titulo"
+    android:layout_gravity="center"/>
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/grupo_radio"
+
+    >
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sin rango especifico"
+        android:id="@+id/radio_no_especifico"
+        />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Con rango especifico"
+        android:id="@+id/radio_especifico"
+        />
+
+</RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:hint="Maximo"
+        android:id="@+id/maximo"
+        android:inputType="number"
+        />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:hint="Minimo"
+            android:id="@+id/minimo"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Permitir decimales"
+        android:id="@+id/check_decimales"/>
+
+      <EditText
+          android:layout_width="0dp"
+          android:layout_weight="0.5"
+          android:layout_marginLeft="40dp"
+          android:layout_height="wrap_content"
+          android:hint="numero de decimales"
+          android:id="@+id/numero_decimales"/>
+
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="Cuantos quieres generar"
+            android:textSize="16dp"
+            android:id="@+id/texto_generar"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:hint="numero de totales"
+            android:id="@+id/numero_totales"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+    android:text="Repetir números"
+    android:textSize="20dp"
+    android:id="@+id/texto_repetir"
+    />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/boton_repetir"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/fondo"
+            android:layout_marginRight="100dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/startup"
+            android:id="@+id/cohete"
+            android:layout_margin="20dp"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
